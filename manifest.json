@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-embedded-system",
+  "version": "1.0.0",
+  "description": "Hardware / Embedded System Designer — Arduino/ESP32/STM32 firmware generation, pin configuration, sensor interfacing",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-embedded-system",
+  "homepage": "https://cortexprism.io/marketplace/plugins/embedded-system",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "embedded_generate_firmware",
+      "description": "Generate firmware from schematic description",
+      "params": []
+    },
+    { "name": "embedded_config_pins", "description": "Configure GPIO pin modes", "params": [] },
+    {
+      "name": "embedded_read_sensor",
+      "description": "Read sensor data and calibrate",
+      "params": []
+    },
+    {
+      "name": "embedded_compile_and_flash",
+      "description": "Compile and flash firmware",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
