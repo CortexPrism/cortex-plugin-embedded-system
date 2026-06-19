@@ -16,7 +16,11 @@
       "description": "Generate firmware from schematic description",
       "params": []
     },
-    { "name": "embedded_config_pins", "description": "Configure GPIO pin modes", "params": [] },
+    {
+      "name": "embedded_config_pins",
+      "description": "Configure GPIO pin modes",
+      "params": []
+    },
     {
       "name": "embedded_read_sensor",
       "description": "Read sensor data and calibrate",
@@ -30,5 +34,8 @@
   ],
   "dependencies": {},
   "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "aiDisclosure": {
+    "tools": ["Kilo (DeepSeek) — batch scaffold"],
+    "humanReview": true
+  }
 }
